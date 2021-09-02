@@ -25,6 +25,8 @@ def slicer(text, size=10):
 		val = html.split(prefix)[1].split(suffix)[0]
 		if val == req.string:
 			print(f"The string slices you need are:\nhtml.split(\"{prefix}\")[1].split(\"{suffix}\")[0]")
+		else:
+			slicer(text,size+5)
 	except:
 		slicer(text,size+5)
 
